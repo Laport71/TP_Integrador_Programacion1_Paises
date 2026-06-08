@@ -1,2 +1,58 @@
-# TP_Integrador_Programacion1_Paises
-Sistema de Gestion de Paises
+import os
+
+# Definimos el contenido estructurado del README.md basado en todo el contexto del TP de Laura y Daniel
+readme_content = """# Sistema de Gestión de Datos de Países 🌍
+
+¡Bienvenido al repositorio del Trabajo Práctico Integrador de Programación 1! Este proyecto consiste en una aplicación de consola interactiva desarrollada en **Python** que permite registrar, gestionar y analizar datos geográficos, demográficos y estadísticos de diferentes países del mundo, utilizando un archivo **CSV** para garantizar la persistencia de los datos.
+
+## 👥 Integrantes
+* **Laura Analía Portela** (Comisión 18) - *UTN TUPaD*
+* **Daniel Elías Buscaglia** (Comisión 12) - *UTN TUPaD*
+
+---
+## 🛠️ Tecnologias utilizadas
+
+•	Lenguaje: Python 3.x
+•	Estructuras de datos: Listas y Diccionarios.
+•	Persistencia: Manejo de archivos CSV.
+•	Control de Versiones: Git y GitHub.
+
+
+## 🚀 Características Principales
+
+* **Persistencia de Datos (CSV):** Carga automática al iniciar el programa y guardado seguro al salir en `paises.csv`. Control de errores si el archivo no existe en la primera ejecución (`FileNotFoundError`).
+* **Validación Estricta:** Control riguroso de ingresos de datos para evitar caídas del sistema (bloqueo de letras en campos numéricos y caracteres inválidos en campos de texto).
+* **Filtrado Avanzado:** Consulta de países por continente, rangos de población y rangos de superficie.
+* **Ordenamiento Dinámico:** Capacidad de ordenar la base de datos por nombre, población o superficie (ascendente y descendente) utilizando expresiones `lambda`.
+* **Módulo Estadístico:** * Identificación del país con mayor y menor población.
+    * Promedio de población por continente.
+    * Promedio de superficie por continente.
+    * Conteo exacto y listado de países por continente.
+* **Buscador Flexible:** Búsqueda por coincidencia exacta o parcial, ignorando mayúsculas/minúsculas y espacios (ej. busca "Costa Rica" de forma exitosa aunque se ingrese "costarica").
+
+---
+
+## 🛠️ Estructura y Decisiones Técnicas
+
+* **Estructura Principal:** Se utiliza una **lista de diccionarios** (`base_paises`) como el núcleo dinámico de almacenamiento en memoria RAM.
+* **Estandarización y Normalización:** Implementación de la función a medida `restaurar_palabra()` para formatear los nombres guardados y garantizar la consistencia en las búsquedas evitando errores de claves (`KeyError`).
+* **Modularización:** Código limpio y ordenado dividido enteramente en funciones específicas reutilizables.
+* **Interfaz Limpia:** Incorporación de rutinas de limpieza de pantalla (`os.system`) adaptativas para sistemas operativos Windows (`nt`) y basados en Unix/Linux/macOS.
+
+---
+
+## ⚙️ Requisitos e Instalación
+
+1.  Tener instalado **Python 3.x** en tu sistema.
+2.  Clonar este repositorio :
+
+    git clone https://github.com/Laport71/TP_Integrador_Programacion1_Paises
+    ```
+
+
+## 🎮 Modo de Uso
+
+Para iniciar la aplicación, ejecuta el script principal desde tu terminal o consola de comandos:
+
+```bash
+python TP_Integrador-programacion.py
