@@ -39,7 +39,39 @@ readme_content = """# Sistema de Gestión de Datos de Países 🌍
 * **Modularización:** Código limpio y ordenado dividido enteramente en funciones específicas reutilizables.
 * **Interfaz Limpia:** Incorporación de rutinas de limpieza de pantalla (`os.system`) adaptativas para sistemas operativos Windows (`nt`) y basados en Unix/Linux/macOS.
 
----
+
+## 📋 Diccionario de Datos
+
+### Variables Globales
+
+| Variable            | Tipo          | Descripción 
+|---------------      |---------------|-------------
+| `base_paises`       | `list[dict]`  | Estructura principal del programa. Lista de diccionarios cada elemento representa un país.
+| `lista_paises`      | `list[str]`   | Lista con los 195 países.Se usa para validar el nombre ingresado por el usuario.
+| `lista_continentes` | `list[str]`   | Lista con los 5 continentes. Se usa para validar el continente ingresado. 
+
+### Estructura de cada elemento en `base_paises`
+
+Cada país se almacena como un diccionario con la siguiente forma:
+
+```python
+{"pais": "Argentina", "poblacion": 46000000, "superficie": 2780400, "continente": "América"}
+
+
+| Clave         | Tipo  | Descripción 
+|---------------|-------|
+| `"pais"`      | `str` | Nombre del país 
+| `"poblacion"` | `int` | Cantidad de pobladores
+| `"superficie"`| `int` | Superficie del país  en Km². 
+| `"continente"`| `str` | Nombre del Continente.
+
+### Archivo de persistencia
+
+| Archivo      | Formato | Descripción |
+|--------------|---------|
+| `paises.csv` | CSV     | Almacena los datos de `base_paises` entre ejecuciones. 
+
+
 
 ## ⚙️ Requisitos e Instalación
 
@@ -56,3 +88,5 @@ Para iniciar la aplicación, ejecuta el script principal desde tu terminal o con
 
 ```bash
 python TP_Integrador-programacion.py
+
+El archivo paises.csv tiene que estar en el mismo directorio del archivo .py
