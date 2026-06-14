@@ -10,10 +10,15 @@ readme_content = """# Sistema de Gestión de Datos de Países 🌍
 * **Daniel Elías Buscaglia** (Comisión 12) - *UTN TUPaD*
 
 ## 🚀 Link Video de Youtube y Link al Repositorio
-Repositorio en GitHub: [  https://github.com/Laport71/TP_Integrador_Programacion1_Paises  ] 
-Video Demostrativo: [ https://www.youtube.com/watch?v=RPVDURkQGKg&t=1s ]
+Repositorio en GitHub: 
+[  https://github.com/Laport71/TP_Integrador_Programacion1_Paises  ]
 
----
+Video Demostrativo: 
+[ https://www.youtube.com/watch?v=RPVDURkQGKg&t=1s ]
+
+Documentacion PDF:
+https://github.com/Laport71/TP_Integrador_Programacion1_Paises/blob/main/Trabajo_Integrador_Promacion1_Laura_Portela_Daniel_Buscaglia.pdf
+
 ## 🛠️ Tecnologias utilizadas
 
 •	Lenguaje: Python 3.x
