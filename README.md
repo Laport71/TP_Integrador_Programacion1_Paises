@@ -9,6 +9,10 @@ readme_content = """# Sistema de Gestión de Datos de Países 🌍
 * **Laura Analía Portela** (Comisión 18) - *UTN TUPaD*
 * **Daniel Elías Buscaglia** (Comisión 12) - *UTN TUPaD*
 
+## 🚀 Link Video de Youtube y Link al Repositorio
+Repositorio en GitHub: [  https://github.com/Laport71/TP_Integrador_Programacion1_Paises  ] 
+Video Demostrativo: [ https://www.youtube.com/watch?v=RPVDURkQGKg&t=1s ]
+
 ---
 ## 🛠️ Tecnologias utilizadas
 
@@ -38,6 +42,23 @@ readme_content = """# Sistema de Gestión de Datos de Países 🌍
 * **Estandarización y Normalización:** Implementación de la función a medida `restaurar_palabra()` para formatear los nombres guardados y garantizar la consistencia en las búsquedas evitando errores de claves (`KeyError`).
 * **Modularización:** Código limpio y ordenado dividido enteramente en funciones específicas reutilizables.
 * **Interfaz Limpia:** Incorporación de rutinas de limpieza de pantalla (`os.system`) adaptativas para sistemas operativos Windows (`nt`) y basados en Unix/Linux/macOS.
+
+## 🛠️ Contribuciones de los integrantes
+
+* **Daniel Buscaglia** (Comisión 12) - *UTN TUPaD*
+  * **Estructura Principal y Flujo del Sistema:** Diseñó la arquitectura central del script, implementando el bucle global de ejecución, el enrutamiento de funciones según la opción seleccionada y la persistencia de datos (apertura, lectura inicial y sobreescritura automatizada en el archivo `paises.csv` mediante bloques de control).
+  * **Arquitectura de Interfaz y Navegación:** Desarrolló el sistema modular de menús (principal y submenús) e implementó la función `validar_opciones` con `.isdigit()` y `.isalpha()` para prevenir ingresos inválidos de control.
+  * **Procesamiento de Cadenas (UX):** Desarrolló el algoritmo `restaurar_palabra` para decodificar textos en formato compacto e inyectar automáticamente los espacios legibles en pantalla.
+  * **Módulo de Modificación y Filtros:** Programó la lógica para la reescritura en memoria de poblaciones y superficies, y diseñó el sistema de filtrado avanzado por rangos numéricos acotados (mínimos y máximos).
+  * **Módulo Estadístico y Ordenamiento (Analítica):** Implementó el uso avanzado de `lambda`, `max()`, `min()` y `sorted()` para identificar valores críticos y clasificar datos (alfabético, poblacional y territorial). Desarrolló los algoritmos para calcular promedios por continente y el conteo/agrupación geográfica.
+
+  
+  * **Laura Analía Portela** (Comisión 12) - *UTN TUPaD*
+  * **Contribución:** Desarrollo del **Módulo de Gestión, Búsqueda y Validación de Datos**.
+    * **Robustez en Carga de Datos:** Implementó la función `agregar_pais` con un sistema estricto de captura de excepciones (`try-except`, `ValueError`, `TypeError`) para evitar el ingreso de datos nulos, números negativos o tipos incorrectos en poblaciones y superficies.
+    * **Algoritmo de Coincidencias Óptimas:** Diseñó y optimizó la lógica de `buscar_parecido`, un algoritmo propio que evalúa cadenas de texto basándose en su longitud y concordancia de caracteres posicionales para detectar duplicados implícitos o errores de tipeo (ej. "México" vs "Mejico").
+    * **Estandarización y Formateo:** Desarrolló los mecanismos de normalización de cadenas de texto mediante manipulación de strings (`.title()`, `.replace()`, `.split()`) para garantizar que las búsquedas y los filtros sean agnósticos a los espacios y mayúsculas.
+    * **Módulos de Consulta Dinámica:** Programó las funciones de búsqueda parcial/total (`buscar_pais`) y el sistema de segmentación regional (`filtrar_continente`), integrando estructuras de control eficientes como la función integrada `any()` para optimizar el recorrido de la base de datos distribuida en diccionarios.
 
 
 ## 📋 Diccionario de Datos
@@ -72,14 +93,17 @@ Cada país se almacena como un diccionario con la siguiente forma:
 | `paises.csv` | CSV     | Almacena los datos de `base_paises` entre ejecuciones. 
 
 
-
 ## ⚙️ Requisitos e Instalación
 
-1.  Tener instalado **Python 3.x** en tu sistema.
-2.  Clonar este repositorio :
+1. Tener instalado **Python 3.x** en tu sistema.
+2. Clonar este repositorio e ingresar a la carpeta del proyecto:
 
-    git clone https://github.com/Laport71/TP_Integrador_Programacion1_Paises
-    ```
+```bash
+# Clonar el repositorio
+git clone [https://github.com/Laport71/TP_Integrador_Programacion1_Paises](https://github.com/Laport71/TP_Integrador_Programacion1_Paises)
+
+# Entrar al directorio del proyecto
+cd TP_Integrador_Programacion1_Paises
 
 
 ## 🎮 Modo de Uso
